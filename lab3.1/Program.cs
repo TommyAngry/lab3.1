@@ -15,11 +15,13 @@ namespace lab3._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите 1 для вывода группы сноубордистов, 2- для вывода лыжников" +
-                "любую другую кнопку для выхода");
+           
             while (true) 
             {
-                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Введите 1 для вывода группы сноубордистов, 2- для вывода лыжников" +
+               "любую другую кнопку для выхода");
+                var a = Convert.ToInt32(Console.ReadLine());
+                
                 if (a == 1)
                 {
                     Snowboarder snowboarder = new Snowboarder();
@@ -29,10 +31,15 @@ namespace lab3._1
                     Skiers skiers = new Skiers();
 
                 }
-                else
+                
+                else if(a==0)
                 {
                     break;
                   
+                }
+                else
+                {
+                    Console.WriteLine("Введите корректный символ");
                 }
             }
           
