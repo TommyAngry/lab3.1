@@ -10,13 +10,15 @@ namespace lab3._1
     {
         public override List<User> GetContent()
         {
-            Group group = new Group() { Name = "Лыжники" };
+            
             List<User> users = new List<User>()
             {
-                new User{Name = "Ilya", Age = 18, Group = group},
-                new User{Name = "Vany", Age = 20, Group = group},
-                new User{Name = "Igor", Age = 20, Group = group},
-                new User{Name = "Sasha", Age = 19, Group = group},
+                new User{Team="Grozny",Name="Liza",Age = 38, Group="Мастер спорта"},
+                new User{Team= "Developers",Name = "Ilya", Age = 18, Group = "Юношеский разряд"},
+                new User{Team= "Developers",Name = "Vany", Age = 20},
+                new User{Team="Grozny",Name = "Igor", Age = 20, Group = "Мастер спорта"},
+                new User{Team= "Developers",Name = "Sasha", Age = 19},
+                  new User{Team="la-la card",Name="Yra",Age = 45},
             };
             return users;
         }

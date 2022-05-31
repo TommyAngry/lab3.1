@@ -24,7 +24,7 @@ namespace lab3._1
                 {
                     Snowboarder snowboarder = new Snowboarder();
                 }
-                if (a == 2)
+                else if (a == 2)
                 {
                     Skiers skiers = new Skiers();
 
